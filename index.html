@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css"/>
+    <title>Form Classic Html</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+        <form method="post" action="">
+            <fieldset>
+                <label for="first-name">
+                    Enter your name
+                    <input id="first-name" name="first-name" type="text" required/>
+                </label>
+                <label for="last-name">
+                    last name
+                    <input id="last-name" name="last-name" type="text" required/>
+                </label>
+                <label for="Email">
+                    email
+                    <input id="Email" name="Email" type="email" required/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <h3>type of account</h1>
+                <label for="normalAccount">
+                    <input type="radio" id="normalAccount" name="normalAccount" class="inline" />
+                    Account normal
+                </label>
+                <label for="plusAccount">
+                    <input type="radio" id="plusAccount" name="normalAccount" class="inline" />
+                    Plus Account
+                </label>
+                <label for="admAccount">
+                    <input type="radio" id="admAccount" name="normalAccount" class="inline" />
+                    Adm Account
+                </label>
+                <label for="terms">
+                    <input type="checkbox" id="terms" class="inline"/> I accept <a href="#"> terms and conditions</a> bla bla bla
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="profile-picture"> Upload a profile picture:
+                    <input id="profile-picture" type="file" name="file"/>
+                </label>
+                <label for="age"> input your age<input 
+                id="age" type="number" name="age" min="13" max="120"/>
+                </label>
+                <label for="referrer"> How did your hear about us?
+                    <select id="referrer" name="referrer">
+                        <option value="">(select)</option>
+                        <option value="1">News</option>
+                        <option value="2">YoutubeChannel</option>
+                        <option value="3">Forum</option>
+                        <option value="4">other</option>
+                    </select>
+                </label>
+                <label for="bio">
+                    provide a bio
+                    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
